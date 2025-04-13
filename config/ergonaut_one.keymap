@@ -16,8 +16,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 4>;
+            then-layer = <4>;
         };
     };
 
@@ -45,20 +45,20 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp ESCAPE  &kp Q  &kp L  &kp U                &kp MINUS  &kp EQUAL  &kp F  &kp W          &kp R          &kp Y  &kp P  &kp DEL
-&kp TAB     &kp E  &kp I  &kp A                &kp O      &kp DOT    &kp K  &kp T          &kp N          &kp S  &kp H  &kp ENTER
-&kp LSHFT   &kp Z  &kp X  &kp C                &kp V      &kp COMMA  &kp G  &kp D          &kp M          &kp J  &kp B  &kp RSHFT
-                          &mt LCTRL LC(SPACE)  &kp SPACE  &altgrave_ctrl      &mo 2  &kp BACKSPACE  &kp RIGHT_ALT
+&gresc        &kp Q  &kp L  &kp U                &kp COMMA    &kp PERIOD      &kp G          &kp W      &kp R              &kp Y  &kp P  &kp DEL
+&kp TAB       &kp E  &kp I  &kp A                &kp O        &kp MINUS       &kp K          &kp T      &kp N              &kp S  &kp H  &kp SLASH
+&kp LEFT_WIN  &kp Z  &kp X  &kp C                &kp V        &kp SQT         &kp G          &kp D      &kp M              &kp J  &kp B  &tog 3
+                            &lt 1 LC(LA(SPACE))  &lt 2 SPACE  &altgrave_ctrl  &kp BACKSPACE  &kp ENTER  &kp RS(RIGHT_ALT)
             >;
         };
 
-        Left {
+        num_symbol {
             display-name = "Left";
             bindings = <
-&trans  &kp DOLLAR   &kp AT     &kp POUND  &kp TILDE     &kp GRAVE      &trans     &kp N7        &kp N8   &kp N9  &trans        &trans
-&trans  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTERISK  &kp FSLH       &kp COLON  &kp N4        &kp N5   &kp N6  &kp EXCL      &kp LEFT_WIN
-&trans  &trans       &trans     &trans     &trans        &kp BACKSLASH  &kp SEMI   &kp N1        &kp N2   &kp N3  &kp QUESTION  &trans
-                                &trans     &trans        &trans         &trans     &kp NUMBER_0  &kp DOT
+&trans  &kp DOLLAR   &kp AT     &kp POUND  &kp TILDE     &kp GRAVE      &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTERISK  &kp FSLH       &trans  &kp N4  &kp N5  &kp N6  &kp N0  &trans
+&trans  &trans       &trans     &trans     &trans        &kp BACKSLASH  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                &trans     &trans        &trans         &trans  &trans  &trans
             >;
         };
 
