@@ -48,7 +48,7 @@
 &kp ESCAPE  &kp Q  &kp L  &kp U                &kp MINUS  &kp EQUAL  &kp F  &kp W          &kp R          &kp Y  &kp P  &kp DEL
 &kp TAB     &kp E  &kp I  &kp A                &kp O      &kp DOT    &kp K  &kp T          &kp N          &kp S  &kp H  &kp ENTER
 &kp LSHFT   &kp Z  &kp X  &kp C                &kp V      &kp COMMA  &kp G  &kp D          &kp M          &kp J  &kp B  &kp RSHFT
-                          &mt LCTRL LC(SPACE)  &kp SPACE  &hold_tap_alt_grave      &mo 2  &kp BACKSPACE  &kp RIGHT_ALT
+                          &mt LCTRL LC(SPACE)  &kp SPACE  &altgrave_ctrl      &mo 2  &kp BACKSPACE  &kp RIGHT_ALT
             >;
         };
 
