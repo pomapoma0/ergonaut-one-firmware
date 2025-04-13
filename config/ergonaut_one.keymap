@@ -17,8 +17,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <2 4>;
-            then-layer = <4>;
+            if-layers = <5 5>;
+            then-layer = <5>;
         };
     };
 
@@ -46,10 +46,10 @@
         Main {
             display-name = "Main";
             bindings = <
-&gresc        &kp Q  &kp L  &kp U                &kp COMMA    &kp PERIOD      &kp G          &kp W      &kp R            &kp Y  &kp P  &kp DEL
-&kp TAB       &kp E  &kp I  &kp A                &kp O        &kp MINUS       &kp K          &kp T      &kp N            &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp Z  &kp X  &kp C                &kp V        &kp SQT         &kp G          &kp D      &kp M            &kp J  &kp B  &tog 3
-                            &lt 1 LC(LA(SPACE))  &lt 2 SPACE  &altgrave_ctrl  &kp BACKSPACE  &kp ENTER  &kp RIGHT_SHIFT
+&gresc        &kp Q  &kp L  &kp U                &kp COMMA    &kp PERIOD           &kp G          &kp W      &kp R            &kp Y  &kp P  &kp DEL
+&kp TAB       &kp E  &kp I  &kp A                &kp O        &kp MINUS            &kp K          &kp T      &kp N            &kp S  &kp H  &kp SLASH
+&kp LEFT_WIN  &kp Z  &kp X  &kp C                &kp V        &kp SQT              &kp F          &kp D      &kp M            &kp J  &kp B  &tog 3
+                            &lt 1 LC(LA(SPACE))  &lt 2 SPACE  &mt LCTRL LA(GRAVE)  &kp BACKSPACE  &kp ENTER  &kp RIGHT_SHIFT
             >;
         };
 
@@ -58,28 +58,37 @@
             bindings = <
 &trans  &kp PERCENT   &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE      &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
 &trans  &kp QUESTION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE      &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0     &kp SLASH
-&trans  &kp HASH      &kp DOLLAR       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp NON_US_BACKSLASH
+&trans  &kp HASH      &kp DOLLAR       &kp SEMICOLON         &kp PIPE               &kp AMPERSAND  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp NON_US_BACKSLASH
                                        &trans                &trans                 &trans         &trans        &trans  &trans
             >;
         };
 
-        Right {
-            display-name = "Right";
+        Config_SC {
+            display-name = "Conflg";
             bindings = <
-&trans  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp DOUBLE_QUOTES  &kp HOME  &kp UP                &kp END                &trans  &trans
-&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &kp SQT            &kp LEFT  &kp DOWN              &kp RIGHT              &trans  &trans
-&trans  &none           &none           &none           &none            &none            &kp LBKT           &kp RBKT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-                                        &mkp MB4        &mkp MB1         &mkp MB2         &trans             &trans    &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &none  &bt BT_SEL 0
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &bt BT_SEL 1
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &none     &none         &none      &none  &bt BT_SEL 2
+                         &trans   &trans   &trans  &trans         &trans    &trans
             >;
         };
 
-        Config {
-            display-name = "Conflg";
+        move-mouse {
+            display-name = "Right";
             bindings = <
-&bootloader  &studio_unlock  &none         &none         &none         &none         &kp CAPS      &kp KP_NUMLOCK  &kp SCROLLLOCK  &none         &studio_unlock  &bootloader
-&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
-&sys_reset   &none           &none         &none         &none         &none         &none         &none           &none           &none         &none           &sys_reset
-                                           &trans        &none         &trans        &none         &trans          &trans
+&to 4   &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &none  &none  &bt BT_SEL 0
+&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &none  &none  &bt BT_SEL 1
+&trans  &none           &none           &none           &none            &none            &none            &none   &none   &none  &none  &bt BT_SEL 2
+                                        &mkp MB4        &mkp MB1         &mkp MB2         &trans           &trans  &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&none  &kp TAB           &kp Q  &kp W     &kp E      &kp R      &none  &kp NUMBER_1  &kp NUMBER_2  &kp N3     &kp NUMBER_4  &to 0
+&none  &kp LEFT_SHIFT    &kp A  &kp S     &kp D      &kp F      &none  &kp N5        &kp NUMBER_6  &kp N7     &kp N8        &to 0
+&none  &kp LEFT_CONTROL  &kp Z  &kp X     &kp C      &kp V      &none  &kp N9        &kp N0        &kp SLASH  &kp EQUAL     &to 0
+                                &kp LEFT  &kp SPACE  &kp RIGHT  &none  &none         &none
             >;
         };
     };
