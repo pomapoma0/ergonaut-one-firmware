@@ -55,7 +55,7 @@
         num_symbol {
             display-name = "Left";
             bindings = <
-bindings = <&kp LA(GRAVE)>  &kp DOLLAR   &kp AT     &kp POUND  &kp TILDE     &kp GRAVE      &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp DOLLAR   &kp AT     &kp POUND  &kp TILDE     &kp GRAVE      &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
 &trans  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTERISK  &kp FSLH       &trans  &kp N4  &kp N5  &kp N6  &kp N0  &trans
 &trans  &trans       &trans     &trans     &trans        &kp BACKSLASH  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
                                 &trans     &trans        &trans         &trans  &trans  &trans
