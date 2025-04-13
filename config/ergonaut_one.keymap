@@ -53,7 +53,7 @@
             >;
         };
 
-        num_symbol {
+        Num_symbol {
             display-name = "Left";
             bindings = <
 &trans  &kp PERCENT   &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE      &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
@@ -63,7 +63,7 @@
             >;
         };
 
-        Config_SC {
+        Others {
             display-name = "Conflg";
             bindings = <
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &none  &bt BT_SEL 0
@@ -73,7 +73,7 @@
             >;
         };
 
-        move-mouse {
+        Move-mouse {
             display-name = "Right";
             bindings = <
 &to 4   &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &none  &none  &bt BT_SEL 0
@@ -83,7 +83,7 @@
             >;
         };
 
-        game {
+        Game {
             bindings = <
 &none  &kp TAB           &kp Q  &kp W     &kp E      &kp R      &none  &kp NUMBER_1  &kp NUMBER_2  &kp N3     &kp NUMBER_4  &to 0
 &none  &kp LEFT_SHIFT    &kp A  &kp S     &kp D      &kp F      &none  &kp N5        &kp NUMBER_6  &kp N7     &kp N8        &to 0
