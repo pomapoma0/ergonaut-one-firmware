@@ -1,1 +1,12 @@
-
+/ {
+  behaviors {
+    hold_tap_alt_grave: behavior_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HoldTap Alt+Grave / Ctrl";
+      #binding-cells = <0>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&ctrl>, <&sk LEFT_ALT &kp GRAVE>;
+    };
+  };
+};
