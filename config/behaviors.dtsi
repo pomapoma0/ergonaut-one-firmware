@@ -1,8 +1,8 @@
 / {
   behaviors {
-    hold_tap_alt_grave: behavior_hold_tap {
+    altgrave_ctrl: behavior_hold_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "HoldTap Alt+Grave / Ctrl";
+      label = "Tap Alt+Grave / hold Ctrl";
       #binding-cells = <0>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
