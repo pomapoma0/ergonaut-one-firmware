@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -45,30 +46,30 @@
         Main {
             display-name = "Main";
             bindings = <
-&gresc        &kp Q  &kp L  &kp U                &kp COMMA    &kp PERIOD      &kp G          &kp W      &kp R              &kp Y  &kp P  &kp DEL
-&kp TAB       &kp E  &kp I  &kp A                &kp O        &kp MINUS       &kp K          &kp T      &kp N              &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp Z  &kp X  &kp C                &kp V        &kp SQT         &kp G          &kp D      &kp M              &kp J  &kp B  &tog 3
-                            &lt 1 LC(LA(SPACE))  &lt 2 SPACE  &altgrave_ctrl  &kp BACKSPACE  &kp ENTER  &kp RS(RIGHT_ALT)
+&gresc        &kp Q  &kp L  &kp U                &kp COMMA    &kp PERIOD      &kp G          &kp W      &kp R            &kp Y  &kp P  &kp DEL
+&kp TAB       &kp E  &kp I  &kp A                &kp O        &kp MINUS       &kp K          &kp T      &kp N            &kp S  &kp H  &kp SLASH
+&kp LEFT_WIN  &kp Z  &kp X  &kp C                &kp V        &kp SQT         &kp G          &kp D      &kp M            &kp J  &kp B  &tog 3
+                            &lt 1 LC(LA(SPACE))  &lt 2 SPACE  &altgrave_ctrl  &kp BACKSPACE  &kp ENTER  &kp RIGHT_SHIFT
             >;
         };
 
         num_symbol {
             display-name = "Left";
             bindings = <
-&trans  &kp DOLLAR   &kp AT     &kp POUND  &kp TILDE     &kp GRAVE      &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTERISK  &kp FSLH       &trans  &kp N4  &kp N5  &kp N6  &kp N0  &trans
-&trans  &trans       &trans     &trans     &trans        &kp BACKSLASH  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                &trans     &trans        &trans         &trans  &trans  &trans
+&trans  &kp PERCENT   &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE      &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
+&trans  &kp QUESTION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE      &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0     &kp SLASH
+&trans  &kp HASH      &kp DOLLAR       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp NON_US_BACKSLASH
+                                       &trans                &trans                 &trans         &trans        &trans  &trans
             >;
         };
 
         Right {
             display-name = "Right";
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp DOUBLE_QUOTES  &kp HOME        &kp UP                &kp END                &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp SQT            &kp LEFT        &kp DOWN              &kp RIGHT              &trans  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp LBKT           &kp RBKT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-                         &trans   &trans   &trans  &trans             &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp DOUBLE_QUOTES  &kp HOME  &kp UP                &kp END                &trans  &trans
+&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &kp SQT            &kp LEFT  &kp DOWN              &kp RIGHT              &trans  &trans
+&trans  &none           &none           &none           &none            &none            &kp LBKT           &kp RBKT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+                                        &mkp MB4        &mkp MB1         &mkp MB2         &trans             &trans    &trans
             >;
         };
 
