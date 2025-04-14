@@ -76,9 +76,9 @@
         Move-mouse {
             display-name = "Right";
             bindings = <
-&to 4   &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &none  &none  &bt BT_SEL 0
-&to 0   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &none  &none  &bt BT_SEL 1
-&trans  &none           &none           &none           &none            &none            &none            &none   &none   &none  &none  &bt BT_SEL 2
+&to 4   &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &none  &bt BT_SEL 0  &to 4
+&to 0   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &none  &bt BT_SEL 1  &to 0
+&trans  &none           &none           &none           &none            &none            &none            &none   &none   &none  &bt BT_SEL 2  &bt BT_NXT
                                         &mkp MB4        &mkp MB1         &mkp MB2         &trans           &trans  &trans
             >;
         };
