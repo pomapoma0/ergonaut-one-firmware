@@ -46,9 +46,9 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp TAB       &kp Q  &kp L  &kp U         &kp COMMA    &kp PERIOD      &kp G          &kp W      &kp R                &kp Y  &kp P  &kp DEL
+&kp TAB       &kp Q  &kp L  &kp U         &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R                &kp Y  &kp P  &kp DEL
 &kp LEFT_ALT  &kp E  &kp I  &kp A         &kp O        &kp MINUS       &kp K          &kp T      &kp N                &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp X  &kp Z  &kp C         &kp V        &kp SQT         &kp F          &kp D      &kp M                &kp J  &kp B  &to 3
+&kp LEFT_WIN  &kp X  &kp Z  &kp C         &kp V        &kp SQT         &kp G          &kp D      &kp M                &kp J  &kp B  &to 3
                             &lt 1 ESCAPE  &lt 2 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mt RCTRL RA(GRAVE)
             >;
         };
