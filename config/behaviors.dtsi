@@ -1,12 +1,1 @@
-/ {
-  behaviors {
-    altgrave_ctrl: behavior_hold_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "Tap Alt+Grave / hold Ctrl";
-      #binding-cells = <0>;
-      flavor = "hold-preferred";
-      tapping-term-ms = <200>;
-      bindings = <&ctrl>, <&sk LEFT_ALT &kp GRAVE>;
-    };
-  };
-};
+#include "pointing_config.h"
