@@ -76,10 +76,10 @@
         Move-mouse {
             display-name = "Right";
             bindings = <
-&trans  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &sys_reset   &bt BT_SEL 0  &none
-&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &bootloader  &bt BT_SEL 1  &to 4
-&trans  &none           &none           &none           &none            &none            &none            &none   &none   &bt BT_NXT   &bt BT_SEL 2  &to 0
-                                        &mkp MB4        &mkp MB1         &mkp MB2         &trans           &trans  &trans
+&trans  &none           &msc SCRL_UP       &mmv MOVE_Y(-600)  &msc SCRL_DOWN    &none            &kp PRINTSCREEN  &none   &none   &sys_reset   &bt BT_SEL 0  &none
+&trans  &msc SCRL_LEFT  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_RIGHT  &none            &none   &none   &bootloader  &bt BT_SEL 1  &to 4
+&trans  &none           &none              &none              &none             &none            &none            &none   &none   &bt BT_NXT   &bt BT_SEL 2  &to 0
+                                           &mkp MB4           &mkp MB1          &mkp MB2         &trans           &trans  &trans
             >;
         };
 
