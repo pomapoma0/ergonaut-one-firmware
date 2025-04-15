@@ -22,23 +22,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        PrintLeft {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <15 16>;
-            layers = <0>;
-            require-prior-idle-ms = <50>;
-        };
-
-        PrintRight {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <19 20>;
-            layers = <0>;
-            require-prior-idle-ms = <50>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
