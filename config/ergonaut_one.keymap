@@ -30,10 +30,10 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp TAB       &kp Q  &kp L  &kp U         &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R                &kp Y  &kp P  &kp DEL
-&kp LEFT_ALT  &kp E  &kp I  &kp A         &kp O        &kp MINUS       &kp K          &kp T      &kp N                &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp X  &kp Z  &kp C         &kp V        &kp SQT         &kp G          &kp D      &kp M                &kp J  &kp B  &to 3
-                            &lt 1 ESCAPE  &lt 2 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mt RCTRL RC(SPACE)
+&kp TAB       &kp Q  &kp L  &kp U                    &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R         &kp Y  &kp P  &kp DEL
+&kp LEFT_ALT  &kp E  &kp I  &kp A                    &kp O        &kp MINUS       &kp K          &kp T      &kp N         &kp S  &kp H  &kp SLASH
+&kp LEFT_WIN  &kp X  &kp Z  &kp C                    &kp V        &kp SQT         &kp G          &kp D      &kp M         &kp J  &kp B  &to 3
+                            &mt LCTRL LC(RC(SPACE))  &lt 1 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt 2 ESCAPE
             >;
         };
 
@@ -50,9 +50,9 @@
         Others {
             display-name = "Conflg";
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &bt BT_SEL 0
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &bt BT_SEL 1
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &msc SCRL_LEFT  &none         &msc SCRL_RIGHT  &none  &bt BT_SEL 2
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &none
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &none
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &msc SCRL_LEFT  &none         &msc SCRL_RIGHT  &none  &none
                          &trans   &trans   &trans  &trans         &trans          &trans
             >;
         };
