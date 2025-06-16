@@ -32,26 +32,26 @@
             bindings = <
 &kp TAB       &kp Q  &kp L  &kp U                    &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R         &kp Y  &kp P  &kp DEL
 &kp LEFT_ALT  &kp E  &kp I  &kp A                    &kp O        &kp MINUS       &kp K          &kp T      &kp N         &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp X  &kp Z  &kp C                    &kp V        &kp SQT         &kp G          &kp D      &kp M         &kp J  &kp B  &to 3
-                            &mt LCTRL LC(RC(SPACE))  &lt 1 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt 2 ESCAPE
+&kp LEFT_WIN  &kp X  &kp Z  &kp C                    &kp V        &kp SQT         &kp G          &kp D      &kp M         &kp J  &kp B  &kp EXCLAMATION
+                            &mt LCTRL LC(RC(SPACE))  &lt 2 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt 1 ESCAPE
             >;
         };
 
         Num_symbol {
             display-name = "Left";
             bindings = <
-&trans  &kp PERCENT   &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE             &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
-&trans  &kp QUESTION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE             &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0     &kp SLASH
-&trans  &kp HASH      &kp DOLLAR       &kp SEMICOLON         &kp AMPERSAND          &kp NON_US_BACKSLASH  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp NON_US_BACKSLASH
-                                       &trans                &trans                 &trans                &trans        &trans  &trans
+&trans  &kp PERCENT    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
+&trans  &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0     &kp SLASH
+&trans  &kp DOLLAR     &kp HASH       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+                                      &trans                &trans                 &trans     &trans        &trans  &trans
             >;
         };
 
         Others {
             display-name = "Conflg";
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &none
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &none
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &to 3
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &to 4
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &msc SCRL_LEFT  &none         &msc SCRL_RIGHT  &none  &none
                          &trans   &trans   &trans  &trans         &trans          &trans
             >;
@@ -60,8 +60,8 @@
         Move-mouse {
             display-name = "Right";
             bindings = <
-&trans  &none           &msc SCRL_UP       &mmv MOVE_Y(-600)  &msc SCRL_DOWN    &none            &kp PRINTSCREEN  &none   &none   &sys_reset  &bt BT_SEL 0  &none
-&trans  &msc SCRL_LEFT  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_RIGHT  &none            &none   &none   &bt BT_CLR  &bt BT_SEL 1  &to 4
+&trans  &none           &msc SCRL_UP       &mmv MOVE_Y(-600)  &msc SCRL_DOWN    &none            &kp PRINTSCREEN  &none   &none   &sys_reset  &bt BT_SEL 0  &to 0
+&trans  &msc SCRL_LEFT  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_RIGHT  &none            &none   &none   &bt BT_CLR  &bt BT_SEL 1  &to 0
 &trans  &none           &none              &none              &sys_reset        &bootloader      &none            &none   &none   &bt BT_NXT  &bt BT_SEL 2  &to 0
                                            &mkp MB4           &mkp MB1          &mkp MB2         &trans           &trans  &trans
             >;
