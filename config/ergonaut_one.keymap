@@ -17,12 +17,21 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <5 5>;
-            then-layer = <5>;
+            if-layers = <4 4>;
+            then-layer = <4>;
         };
     };
 
     combos { compatible = "zmk,combos"; };
+
+    macros {
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp N0 &kp N1 &kp N7 &kp N6>;
+            label = "TEST";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -30,9 +39,9 @@
         Main {
             display-name = "Main";
             bindings = <
-&kp TAB       &kp Q  &kp L  &kp U                    &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R         &kp Y  &kp P  &kp DEL
-&kp LEFT_ALT  &kp E  &kp I  &kp A                    &kp O        &kp MINUS       &kp K          &kp T      &kp N         &kp S  &kp H  &kp SLASH
-&kp LEFT_WIN  &kp X  &kp Z  &kp C                    &kp V        &kp SQT         &kp G          &kp D      &kp M         &kp J  &kp B  &kp EXCLAMATION
+&kp TAB       &kp Q  &kp L  &kp U                    &kp COMMA    &kp PERIOD      &kp F          &kp W      &kp R         &kp Y  &kp P    &kp DEL
+&kp LEFT_ALT  &kp E  &kp I  &kp A                    &kp O        &kp MINUS       &kp K          &kp T      &kp N         &kp S  &kp H    &kt LOCKING_NUM
+&kp LEFT_WIN  &kp X  &kp Z  &kp C                    &kp V        &kp SQT         &kp G          &kp D      &kp M         &kp J  &lt 3 B  &kp KP_NUMLOCK
                             &mt LCTRL LC(RC(SPACE))  &lt 1 SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt 2 ESCAPE
             >;
         };
@@ -40,20 +49,29 @@
         Num_symbol {
             display-name = "Left";
             bindings = <
-&trans  &kp PERCENT    &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp PLUS      &kp N7  &kp N8  &kp N9  &kp CARET  &trans
-&trans  &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0     &kp SLASH
-&trans  &kp DOLLAR     &kp HASH       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
-                                      &trans                &trans                 &trans     &trans        &trans  &trans
+&trans  &kp HASH      &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp SLASH             &kp LESS_THAN   &kp GREATER_THAN  &kp PERCENT  &kp ASTERISK  &trans
+&trans  &kp QUESTION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp NON_US_BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL    &kp PLUS      &trans
+&trans  &kp DOLLAR    &kp AMPERSAND    &kp A                 &kp A                  &test      &kp PIPE              &kp SEMICOLON   &kp SEMICOLON     &kp CARET    &kp A         &trans
+                                       &trans                &trans                 &trans     &trans                &trans          &trans
             >;
         };
 
         Others {
             display-name = "Conflg";
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &to 4
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &to 3
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &none  &to 5
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &none  &to 5
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &msc SCRL_LEFT  &none         &msc SCRL_RIGHT  &none  &none
                          &trans   &trans   &trans  &trans         &trans          &trans
+            >;
+        };
+
+        number {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                        &trans  &trans  &trans  &trans           &trans           &trans
             >;
         };
 
