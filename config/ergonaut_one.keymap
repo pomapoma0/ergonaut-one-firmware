@@ -81,22 +81,22 @@
             >;
         };
 
-        Others {
+        Number {
             display-name = "Conflg";
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END          &msc SCRL_UP    &to 4
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT        &msc SCRL_DOWN  &to 6
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none          &msc SCRL_LEFT  &none         &msc SCRL_RIGHT  &none           &none
-                         &trans   &trans   &trans  &trans         &trans          &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &none   &kp N7        &kp N8        &kp N9        &none   &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &none
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans
+                         &trans   &trans   &trans  &trans  &trans        &trans
             >;
         };
 
-        number {
+        Others {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS     &kp PLUS   &kp N7        &kp N8        &kp N9        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp ASTERISK  &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp CARET     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-                        &trans  &trans  &trans  &trans        &trans     &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END    &msc SCRL_UP    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 4          &to 5           &none         &none      &none           &trans
+                        &trans  &trans  &trans  &trans         &trans          &trans
             >;
         };
 
