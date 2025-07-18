@@ -42,7 +42,7 @@
         f13lay6: f13lay6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 5 &kp F13>;
+            bindings = <&mo 0 &kp F13>;
             label = "F13LAY6";
         };
     };
@@ -107,15 +107,6 @@
 &trans  &msc SCRL_LEFT  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_RIGHT  &none            &none   &none   &bt BT_CLR  &bt BT_SEL 1  &to 0
 &trans  &none           &none              &none              &sys_reset        &bootloader      &none            &none   &none   &bt BT_NXT  &bt BT_SEL 2  &to 0
                                            &mkp MB4           &mkp MB1          &mkp MB2         &trans           &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans   &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F13  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &trans    &mkp MB3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &mkp MB4  &mkp MB1  &mkp MB2  &trans  &trans  &trans
             >;
         };
 
