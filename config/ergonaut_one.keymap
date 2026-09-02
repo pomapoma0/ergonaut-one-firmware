@@ -84,9 +84,9 @@
         Number {
             display-name = "Conflg";
             bindings = <
-&trans  &kp F11  &kp F12  &kp F11  &trans  &trans   &kp MINUS     &kp N7        &kp N8        &kp N9        &kp SLASH  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10  &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0     &trans
-&trans  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5   &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
+&trans  &kp F11  &kp F12  &kp F11  &trans  &trans   &kp MINUS     &kp N7        &kp N8        &kp N9        &kp PERIOD  &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10  &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0      &kp COMMA
+&trans  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5   &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &kp SLASH
                           &trans   &trans  &trans   &trans        &trans        &trans
             >;
         };
