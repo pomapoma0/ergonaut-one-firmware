@@ -95,18 +95,8 @@
             bindings = <
 &sys_reset      &trans      &trans  &trans  &trans  &bt BT_NXT  &trans             &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN  &trans   &trans
 &bootloader     &trans      &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_UP    &kp LEFT_ARROW  &kp DOWN         &kp RIGHT      &trans   &trans
-&bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp HOME       &kp END  &to 5
+&bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp HOME       &kp END  &to 4
                                     &trans  &trans  &trans      &trans             &trans          &trans
-            >;
-        };
-
-        Move-mouse {
-            display-name = "Right";
-            bindings = <
-&trans  &none           &msc SCRL_UP       &mmv MOVE_Y(-600)  &msc SCRL_DOWN    &none            &kp PRINTSCREEN  &none   &none   &sys_reset  &bt BT_SEL 0  &to 0
-&trans  &msc SCRL_LEFT  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_RIGHT  &none            &none   &none   &bt BT_CLR  &bt BT_SEL 1  &to 0
-&trans  &none           &none              &none              &sys_reset        &bootloader      &none            &none   &none   &bt BT_NXT  &bt BT_SEL 2  &to 0
-                                           &mkp MB4           &mkp MB1          &mkp MB2         &trans           &trans  &trans
             >;
         };
 
