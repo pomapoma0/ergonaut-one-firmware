@@ -76,9 +76,9 @@
         Move-mouse {
             display-name = "Right";
             bindings = <
-&trans  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &sys_reset   &bt BT_SEL 0  &to 4
-&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &bootloader  &bt BT_SEL 1  &to 0
-&trans  &none           &none           &none           &none            &none            &none            &none   &none   &none        &bt BT_SEL 2  &bt BT_NXT
+&trans  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &kp PRINTSCREEN  &none   &none   &sys_reset      &bt BT_SEL 0  &to 4
+&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &none            &none   &none   &bootloader     &bt BT_SEL 1  &to 0
+&trans  &none           &none           &none           &none            &none            &none            &none   &none   &studio_unlock  &bt BT_SEL 2  &bt BT_NXT
                                         &mkp MB4        &mkp MB1         &mkp MB2         &trans           &trans  &trans
             >;
         };
