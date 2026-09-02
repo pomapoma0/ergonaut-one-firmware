@@ -93,10 +93,10 @@
 
         Others {
             bindings = <
-&sys_reset      &trans      &trans  &trans  &trans  &bt BT_NXT  &none              &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN  &trans   &trans
-&bootloader     &trans      &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_UP    &kp LEFT_ARROW  &kp DOWN         &kp RIGHT      &none    &trans
-&bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp HOME       &kp END  &to 4
-                                    &trans  &trans  &trans      &trans             &trans          &trans
+&sys_reset      &studio_unlock  &trans  &trans  &trans  &bt BT_NXT  &none              &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN  &trans   &trans
+&bootloader     &trans          &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_UP    &kp LEFT_ARROW  &kp DOWN         &kp RIGHT      &none    &trans
+&bt BT_CLR_ALL  &bt BT_CLR      &trans  &trans  &trans  &bt BT_NXT  &kp K_SCROLL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp HOME       &kp END  &to 4
+                                        &trans  &trans  &trans      &trans             &trans          &trans
             >;
         };
 
