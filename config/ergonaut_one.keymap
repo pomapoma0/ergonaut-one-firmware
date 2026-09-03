@@ -76,7 +76,7 @@
             bindings = <
 &trans  &kp AMPERSAND  &kp HASH         &kp AT_SIGN   &trans     &trans  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE   &trans
 &trans  &kp QUESTION   &kp EXCLAMATION  &kp SLASH     &kp EQUAL  &trans  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &trans
-&trans  &kp PERCENT    &kp CARET        &kp ASTERISK  &kp GRAVE  &trans  &kp SEMICOLON  &HankakuKakkoHidiri   &HankakuKakkoMigi      &kp INT3        &kp DOLLAR        &trans
+&trans  &kp PERCENT    &kp CARET        &kp ASTERISK  &kp PLUS   &trans  &kp SEMICOLON  &HankakuKakkoHidiri   &HankakuKakkoMigi      &kp GRAVE       &kp DOLLAR        &trans
                                         &trans        &trans     &trans  &trans         &trans                &trans
             >;
         };
